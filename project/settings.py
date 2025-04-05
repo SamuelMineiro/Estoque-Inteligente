@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ogk@9b(ve114#3vmh0efzj&a=5va)kn3^79^)ozn@4#hry5f2@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
+DEBUG = False
+ALLOWED_HOSTS = [".koyeb.app"]
+#ALLOWED_DEBUG_HOSTS = ["127.0.0.1", "0.0.0.0"]
+PORT=8000
 
 # Application definition
 
