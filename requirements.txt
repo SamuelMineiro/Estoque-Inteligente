@@ -1,8 +1,7 @@
 asgiref
 django
 gunicorn
+gunicorn
+ruff
 sqlparse
 tzdata
-
-# Development
-ruff
