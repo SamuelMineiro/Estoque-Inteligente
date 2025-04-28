@@ -8,11 +8,11 @@ ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
 .DEFAULT_GOAL := help
 
 lint:
-	npx prettier --check "**/*.{html,css,js}"
+	npx prettier --check "**/*.{html,css,js,md}"
 	ruff check
 
 format:
-	npx prettier --write "**/*.{html,css,js}"
+	npx prettier --write "**/*.{html,css,js,md}"
 	ruff format
 
 migrate:
