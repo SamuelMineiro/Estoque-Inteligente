@@ -9,7 +9,7 @@ __pycache__
 node_modules
 
 # Directories
-# ...
+staticfiles_build
 
 # Files
 # ...
