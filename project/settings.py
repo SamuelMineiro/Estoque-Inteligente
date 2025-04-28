@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,11 +25,10 @@ SECRET_KEY = "django-insecure-ogk@9b(ve114#3vmh0efzj&a=5va)kn3^79^)ozn@4#hry5f2@
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ["adegainteligente.vercel.app", "0.0.0.0"]
+ALLOWED_HOSTS = ["0.0.0.0", ".vercel.app"]
 PORT = 8000
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.humanize",
@@ -94,7 +94,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "en-us"
 
 USE_TZ = True  # Suporte a fuso horário está ativo
-TIME_ZONE = "America/Sao_Paulo"  # Defina o fuso horário correto para sua região
+TIME_ZONE = "UTC"  # Defina o fuso horário correto para sua região
 
 USE_I18N = True
 
@@ -105,6 +105,7 @@ USE_L10N = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
