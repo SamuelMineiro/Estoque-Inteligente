@@ -8,9 +8,11 @@ ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
 .DEFAULT_GOAL := help
 
 lint:
+	npx prettier --check "**/*.{html,css,js}"
 	ruff check
 
 format:
+	npx prettier --write "**/*.{html,css,js}"
 	ruff format
 
 migrate:
@@ -24,8 +26,8 @@ debug:
 
 help:
 	@echo "Available commands:"
-	@echo "  lint       - Check code with ruff"
-	@echo "  format     - Format code with ruff"
+	@echo "  lint       - Check code with prettier and ruff"
+	@echo "  format     - Format code with prettier and ruff"
 	@echo "  migrate    - Apply all database migrations"
 	@echo "  start      - Start production server"
 	@echo "  debug      - Start development server"
