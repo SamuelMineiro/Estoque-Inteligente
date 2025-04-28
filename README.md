@@ -1,4 +1,4 @@
-# controle de Estoque: Adega Inteligente
+# Controle de Estoque: Adega Inteligente
 
 Este software se trata de um sistema de gerenciamento de um estoque de adega. Com a finalidade de realizar funções básicas deste tipo de estabelecimento de maneira mais prática.
 
@@ -61,10 +61,10 @@ $ git clone https://github.com/SamuelMineiro/Estoque-Inteligente.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd Estoque-inteligente\.venv\Scripts  # ou: cd Estoque-inteligente\venv\Scripts
 
-# ative o ambiente virtual
+# Ative o ambiente virtual
 $ activate
 
-#volte a pasta raiz
+# Retorne para a pasta do projeto
 $ cd ../..
 
 # Instale as dependências
