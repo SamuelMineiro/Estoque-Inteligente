@@ -65,5 +65,5 @@ $ python manage.py migrate
 # Execute o servidor
 $ python manage.py runserver
 
-# O servidor inciará na porta:8000 - acesse http://127.0.0.1:8000
+# O servidor inciará na porta 8000 - Acesse: http://0.0.0.0:8000
 ```
